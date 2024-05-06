@@ -29,8 +29,6 @@ const cloudinaryConfig = {
 const apiBaseUrl = "https://ourbrandtv.com/mobile/public/api";
 
 console.log("env",process.env.REACT_APP_OPENAI_API_KEY);
-const openaiAPIKey = process.env.REACT_APP_OPENAI_API_KEY;
-console.log("openAPI",openaiAPIKey)
 
 
 const ImageGenerator = () => {
