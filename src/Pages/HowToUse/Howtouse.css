@@ -1,0 +1,84 @@
+:root{
+  --color: #663399;
+  --bg-color: #c3b1e1;
+  --font-family: "Roboto Condensed", sans-serif;
+}
+.step-section {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+.step-section .back-link .link {
+  background-color: var(--color);
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: fit-content;
+  font-size: 20px;
+  color: white;
+  transition: all .3s ease-in-out;
+  transform: translateX(0px);
+  animation: bounce 2s ease-in-out infinite 1s;
+
+  a{
+    font-size: 20px;
+    color: white;
+  }
+}
+@keyframes bounce {
+  0%{
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translateX(-20px);
+    box-shadow: 1px 0px 4px 1px #3d3d3d;
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+.step-section .back-link .link:hover{
+  background-color: black;
+}
+.step-section #creating .all-steps .row{
+  box-shadow: 1px 0px 4px 1px #c3bebe, inset 1px 1px 13px 1px #c3bebe;
+  border-radius: 20px;
+}
+.step-section .steps-title h4{
+  margin: 10px auto;
+  font-family: var(--font-family);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color);
+  width: 55%;
+  line-height: 50px;
+}
+@media (max-width: 570px){
+  .step-section .steps-title h4{
+    width: 100%;
+  }
+}
+@media (max-width: 350px){
+  .step-section .steps-title h4{
+    font-size: 1.5rem;
+    line-height: 25px;
+  }
+}
+.step-section .steps-title h2{
+  margin: 10px auto;
+  font-family: var(--font-family);
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--color);
+  width: 82%;
+}
+.step-section #creating .all-steps .row h3{
+  font-family: var(--font-family);
+  color: rgb(110, 110, 110);
+  font-size: 30px;
+  font-weight: 700;
+}
+.step-section #creating .all-steps .row p{
+  text-align: justify;
+  color: rgb(54, 54, 54);
+  font-size: 18px;
+  font-family: var(--font-family);
+}
